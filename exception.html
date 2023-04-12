@@ -1,0 +1,75 @@
+<html><body>
+   <nav class="nav-items">
+      <a href="index.html">Home</a>
+      <a href="dbms.html">dbms</a>
+      <a href="sql.html">sql</a>
+      <a href="plsql.html">plsql</a>
+    </nav><h1> Exception Handling</h1>
+An error occurs during the program execution is called Exception in PL/SQL.
+PL/SQL facilitates programmers to catch such conditions using exception block in the program and an 
+appropriate action is taken against the error condition.
+
+There are two type of exceptions:<br>
+
+1. System-defined Exceptions<br>
+2. User-defined Exceptions<br>
+<h3>PL/SQL Exception Handling</h3>
+<b>Syntax for exception handling:</b>
+<br>
+DECLARE  <br>
+   (declarations section)<br>
+BEGIN  <br>
+   (executable command(s))  <br>
+EXCEPTION  <br>
+   (exception handling goes here)<br>
+   WHEN exception1 THEN   <br>
+       exception1-handling-statements   <br>
+   WHEN exception2  THEN   <br>
+      exception2-handling-state<br>ments   
+   WHEN exception3 THEN   <br>
+      exception3-handling-statements  <br>
+   ........  <br>
+   WHEN others THEN  <br>
+      exception3-handling-statements  <br>
+END;  <br><br>
+<img src="57.png" alt="Example" width="500" height="300">
+<img src="58.png" alt="Example" width="500" height="200"></body>
+<style>
+    body{
+        background-color: lavender;
+    }
+     .nav-items {
+     background-color: #302f49;;
+        display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    a:hover{
+          background-color: yellowgreen;
+        }
+    
+    .nav-items a {
+      text-decoration: none;
+      color:white;
+      padding: 35px 20px;
+      font-size: 37px;
+      font-style: normal;
+    }
+    h1{
+        font-style:normal;
+        font-size:32px;
+        text-decoration:underline;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    p{
+        font-size:24px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration:none;
+    }
+    p1{
+    text-decoration: underline;
+    font-size: 24px;
+    
+    }
+    </style>
+    </html>

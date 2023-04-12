@@ -1,0 +1,77 @@
+<html><body>
+  <nav class="nav-items">
+    <a href="index.html">Home</a>
+    <a href="dbms.html">dbms</a>
+    <a href="sql.html">sql</a>
+    <a href="plsql.html">plsql</a>
+  </nav>
+  <h1>Triggers</h1>
+Trigger is invoked by Oracle engine automatically whenever a specified event occurs.Trigger is 
+stored into database and invoked repeatedly, when specific condition match.
+Triggers are stored programs, which are automatically executed or fired when some event occurs.
+
+Triggers are written to be executed in response to any of the following events.
+<br>
+A database manipulation (DML) statement (DELETE, INSERT, or UPDATE).<br>
+A database definition (DDL) statement (CREATE, ALTER, or DROP).<br>
+A database operation (SERVERERROR, LOGON, LOGOFF, STARTUP, or SHUTDOWN).<br>
+Triggers could be defined on the table, view, schema, or database with which the event is associated.<br>
+<h3>Creating a trigger:</h3>
+<b>Syntax for creating trigger:</b>
+<br>
+CREATE [OR REPLACE ] TRIGGER trigger_name   <br>
+{BEFORE | AFTER | INSTEAD OF }   <br>
+{INSERT [OR] | UPDATE [OR] | DELETE} <br>  
+[OF col_name]   <br>
+ON table_name   <br>
+[REFERENCING OLD AS o NEW AS n]   <br>
+[FOR EACH ROW]   <br>
+WHEN (condition)    <br>
+DECLARE  <br>
+   Declaration-statements  <br>
+BEGIN   <br>
+   Executable-statements  <br>
+EXCEPTION  <br>
+   Exception-handling-statements  <br>
+END;  <br><br>
+<img src="59.png" alt="Example" width="500" height="300">
+<img src="60.png" alt="Example" width="350" height="150"></body>
+<style>
+    body{
+        background-color: lavender;
+    }
+     .nav-items {
+     background-color: #302f49;;
+        display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    a:hover{
+          background-color: yellowgreen;
+        }
+    
+    .nav-items a {
+      text-decoration: none;
+      color:white;
+      padding: 35px 20px;
+      font-size: 37px;
+      font-style: normal;
+    }
+    h1{
+        font-style:normal;
+        font-size:32px;
+        text-decoration:underline;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    p{
+        font-size:24px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration:none;
+    }
+    p1{
+    text-decoration: underline;
+    font-size: 24px;
+    
+    }
+    </style>
+    </html>

@@ -1,0 +1,99 @@
+<html><body>
+  <nav class="nav-items">
+    <a href="index.html">Home</a>
+    <a href="dbms.html">dbms</a>
+    <a href="sql.html">sql</a>
+    <a href="plsql.html">plsql</a>
+  </nav><h2>Date Functions</h2>
+        In SQL, dates are complicated for newbies, since while working with a database, the format of the data
+         in the table must be matched with the input data to insert. In various scenarios instead of date, datetime 
+         (time is also involved with date) is used. <br>
+For storing a date or a date and time value in a database,MySQL offers the following data types:<br>
+<br>
+DATE	format YYYY-MM-DD<br>
+DATETIME 	format: YYYY-MM-DD HH:MI: SS<br>
+TIMESTAMP 	format: YYYY-MM-DD HH:MI: SS<br>
+YEAR 	format YYYY or YY<br>
+Now, come to some popular functions in SQL date functions.<br>
+<br>
+1.<u>NOW()</u><br>
+Returns the current date and time. 
+<br>
+Query:
+<br>
+SELECT NOW();<br><br>
+2.<u>CURDATE()</u><br>
+ Returns the current date. <br>
+Query:<br>
+SELECT CURDATE();<br><br>
+3.<u>CURTIME()</u><br>
+ Returns the current time. <br>
+Query:
+<br>
+SELECT CURTIME();
+<br><br>
+4.<u>DATE()</u><br>
+Extracts the date part of a date or date/time expression. <br><br>
+5.<u>DATE_ADD() </u><br>
+ Adds a specified time interval to a date.
+<br>
+Syntax:
+<br>
+DATE_ADD(date, INTERVAL expr type);
+<br>
+Where,  date - valid date expression, and expr is the number of intervals we want to add. and type can be one 
+of the following: MICROSECOND, SECOND, MINUTE, HOUR, DAY, WEEK, MONTH, QUARTER, YEAR, etc. <br><br>
+6.<u>DATE_SUB()</u><br>
+ Subtracts a specified time interval from a date. The syntax for DATE_SUB is the same as DATE_ADD just the 
+ difference is that DATE_SUB is used to subtract a given interval of date.<br>
+
+7.<u>DATEDIFF()</u><br>
+ Returns the number of days between two dates. 
+<br><br>
+Syntax:<br>
+
+8.<u>DATEDIFF(date1, date2);</u>
+<br><br>
+date1 & date2- date/time expression<br><br>
+<img src="28.PNG" alt="Example" width="300" height="200"><br><br>
+<img src="29.PNG" alt="Example" width="300" height="200"><br><br>
+<img src="30.PNG" alt="Example" width="400" height="200"><br><br></body>
+<style>
+    body{
+        background-color: lavender;
+    }
+     .nav-items {
+     background-color: #302f49;;
+        display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    a:hover{
+          background-color: yellowgreen;
+        }
+    
+    .nav-items a {
+      text-decoration: none;
+      color:white;
+      padding: 35px 20px;
+      font-size: 37px;
+      font-style: normal;
+    }
+    h1{
+        font-style:normal;
+        font-size:32px;
+        text-decoration:underline;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    p{
+        font-size:24px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration:none;
+    }
+    p1{
+    text-decoration: underline;
+    font-size: 24px;
+    
+    }
+    </style>
+</html>            

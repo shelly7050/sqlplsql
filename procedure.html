@@ -1,0 +1,70 @@
+<html><body>
+    <nav class="nav-items">
+        <a href="index.html">Home</a>
+        <a href="dbms.html">dbms</a>
+        <a href="sql.html">sql</a>
+        <a href="plsql.html">plsql</a>
+      </nav>
+<h1>Procedures</h1>
+The PL/SQL stored procedure or simply a procedure is a PL/SQL block which performs one or more specific 
+tasks. It is just like procedures in other programming languages.
+
+The procedure contains a header and a body.
+<br>
+Header: The header contains the name of the procedure and the parameters or variables passed to the procedure.<br>
+Body: The body contains a declaration section, execution section and exception section similar to a general 
+PL/SQL block.<br><br>
+<b>Syntax for creating procedure:</b>
+<br>
+CREATE [OR REPLACE] PROCEDURE procedure_name  <br>
+    [ (parameter [,parameter]) ]  <br>
+IS  <br>
+    [declaration_section]  <br>
+BEGIN  <br>
+    executable_section  <br>
+[EXCEPTION  <br>
+    exception_section]  <br>
+END [procedure_name];  <br><br>
+<b>Syntax for drop procedure</b>
+<br>
+DROP PROCEDURE procedure_name;   <br><br>
+<img src="49.png" alt="Example" width="500" height="300"></body>
+<style>
+    body{
+        background-color: lavender;
+    }
+     .nav-items {
+     background-color: #302f49;;
+        display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    a:hover{
+          background-color: yellowgreen;
+        }
+    
+    .nav-items a {
+      text-decoration: none;
+      color:white;
+      padding: 35px 20px;
+      font-size: 37px;
+      font-style: normal;
+    }
+    h1{
+        font-style:normal;
+        font-size:32px;
+        text-decoration:underline;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    p{
+        font-size:24px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration:none;
+    }
+    p1{
+    text-decoration: underline;
+    font-size: 24px;
+    
+    }
+    </style>
+    </html>

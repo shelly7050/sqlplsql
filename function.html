@@ -1,0 +1,63 @@
+<html><body>
+  <nav class="nav-items">
+    <a href="index.html">Home</a>
+    <a href="dbms.html">dbms</a>
+    <a href="sql.html">sql</a>
+    <a href="plsql.html">plsql</a>
+  </nav><h1>Functions</h1>
+The PL/SQL Function is very similar to PL/SQL Procedure. The main difference between procedure and
+ a function is, a function must always return a value, and on the other hand a procedure may or may not 
+ return a value. Except this, all the other things of PL/SQL procedure are true for PL/SQL function too.
+<br><br>
+Syntax to create a function:<br>
+
+CREATE [OR REPLACE] FUNCTION function_name [parameters]  <br>
+[(parameter_name [IN | OUT | IN OUT] type [, ...])]  <br>
+RETURN return_datatype  <br>
+{IS | AS}  <br>
+BEGIN  <br>
+   (function_body)<br>
+END [function_name]; <br>
+<img src="50.png" alt="Example" width="500" height="300">
+<br><br>
+<img src="51.png" alt="Example" width="500" height="300">
+<img src="52.png" alt="Example" width="500" height="200"></body>
+<style>
+    body{
+        background-color: lavender;
+    }
+     .nav-items {
+     background-color: #302f49;;
+        display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    a:hover{
+          background-color: yellowgreen;
+        }
+    
+    .nav-items a {
+      text-decoration: none;
+      color:white;
+      padding: 35px 20px;
+      font-size: 37px;
+      font-style: normal;
+    }
+    h1{
+        font-style:normal;
+        font-size:32px;
+        text-decoration:underline;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    p{
+        font-size:24px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration:none;
+    }
+    p1{
+    text-decoration: underline;
+    font-size: 24px;
+    
+    }
+    </style>
+    </html>

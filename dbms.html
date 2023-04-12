@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <body>
+            <nav class="nav-items">
+                <a href="index.html">Home</a>
+                <a href="dbms.html">dbms</a>
+                <a href="sql.html">sql</a>
+                <a href="plsql.html">plsql</a>
+              </nav>
+            <h1>
+           DBMS INTRODUCTION
+            </h1>
+            <h1>INTRODUCTION:</h1><br>
+            <p>A Database Management System (DBMS) is a software system that is designed to manage and organize data in a structured manner. It allows users to create, modify, and query a database, as well as manage the security and access controls for that database.
+              </p>  
+                <h1>Some key features of a DBMS include:</h1>
+             <p> 1. Data modeling: A DBMS provides tools for creating and modifying data models, which define the structure and relationships of the data in a database.
+          <br><br> 2. Data storage and retrieval: A DBMS is responsible for storing and retrieving data from the database, and can provide various methods for searching and querying the data.
+           <br><br>3. Concurrency control: A DBMS provides mechanisms for controlling concurrent access to the database, to ensure that multiple users can access the data without conflicting with each other.
+          <br><br> 4.Data integrity and security: A DBMS provides tools for enforcing data integrity and security constraints, such as constraints on the values of data and access controls that restrict who can access the data.
+           <br><br>5.Backup and recovery: A DBMS provides mechanisms for backing up and recovering the data in the event of a system failure.
+           </p><br>
+           <h1>types of dbms</h1>
+          <p> DBMS can be classified into two types: 
+            <br>Relational Database Management System (RDBMS) <br>
+             Non-Relational Database Management System (NoSQL or Non-SQL)<br></p>
+           <h1>RDBMS:</h1><br>
+             <p> Data is organized in the form of tables and each table has a set of rows and columns. The data is related to each other through primary and foreign keys.
+           </p><br> 
+           <h1>NoSQL:</h1><br> 
+           <p>Data is organized in the form of key-value pairs, document, graph, or column-based. These are designed to handle large-scale, high-performance scenarios.
+               <br> Database is a collection of interrelated data which helps in the efficient retrieval, insertion, and deletion of data from the database and organizes the data in the form of tables, views, schemas, reports, etc. For Example, a university database organizes the data about students, faculty, admin staff, etc. which helps in the efficient retrieval, insertion, and deletion of data from it.
+               <br> 
+                <h1>There are four types of Data Languages<br></h1>
+                <p>
+                
+                1.Data Definition Language (DDL)<br>
+                2.Data Manipulation Language(DML)<br>
+                3.Data Control Language(DCL)<br>
+                4.Transactional Control Language(TCL)<br>
+<br>
+              (1) DDL is the short name for Data Definition Language, which deals with database schemas and descriptions, of how the data should reside in the database.
+                <br>
+                <br>1.CREATE: to create a database and its objects like (table, index, views, store procedure, function, and triggers)
+             <br>   2.ALTER: alters the structure of the existing database
+               <br> 3.DROP: delete objects from the database
+                <br>4.TRUNCATE: remove all records from a table, including all spaces allocated for the records are removed
+                <br>5.COMMENT: add comments to the data dictionary
+                <br>6.RENAME: rename an object
+<br>
+                <br>(2)DML is the short name for Data Manipulation Language which deals with data manipulation and includes most common SQL statements such SELECT, INSERT, UPDATE, DELETE, etc., and it is used to store, modify, retrieve, delete and update data in a database.
+                <br><br>
+               1. SELECT: retrieve data from a database<br>
+                2.INSERT: insert data into a table<br>
+                3.UPDATE: updates existing data within a table<br>
+                4.DELETE: Delete all records from a database table<br>
+                5.MERGE: UPSERT operation (insert or update)<br>
+                
+    <br>          (3)  DCL is short for Data Control Language which acts as an access specifier to the database.(basically to grant and revoke permissions to users in the database
+                <br><br>
+               1. GRANT: grant permissions to the user for running DML(SELECT, INSERT, DELETE,…) commands on the table<br>
+               2. REVOKE: revoke permissions to the user for running DML(SELECT, INSERT, DELETE,…) command on the specified table<br>
+               3. TCL is short for Transactional Control Language which acts as an manager for all types of transactional data and all transactions.Some of the command of TCL are          
+   <br>        4.   Roll Back: Used to cancel  or Undo changes made in the database 
+       <br>    5.   Commit: It is used to apply or save changes in the database
+           <br>6.    Save Point: It is used to save the data on the temporary basis in the database
+            <br>   <br><p1>Database Management System:</p1><br>
+       <p> The software which is used to manage databases is called Database Management System (DBMS). For Example, MySQL, Oracle, etc. are popular commercial DBMS used in different applications. DBMS allows users the following tasks: 
+            <br>
+              <br>  <br>1.Data Definition: It helps in the creation, modification, and removal of definitions that define the organization of data in the database. 
+                <br><br>2.Data Updation: It helps in the insertion, modification, and deletion of the actual data in the database. 
+                <br><br>3.Data Retrieval: It helps in the retrieval of data from the database which can be used by applications for various purposes. 
+                <br><br>4.User Administration: It helps in registering and monitoring users, enforcing data security, monitoring performance, maintaining data integrity, dealing with concurrency control, and recovering information corrupted by unexpected failure.
+                <br><br>5.Paradigm Shift from File System to DBMS
+                <br></p>
+              
+                <br><h1>ADVANTAGES OR DISADVANTAGES:</h1><br>
+       <br>         <p1>Advantages of using a DBMS:</p1><p>
+       <br>    1. Data organization: A DBMS allows for the organization and storage of data in a structured manner, making it easy to retrieve and query the data as needed.
+       <br>    2. Data integrity: A DBMS provides mechanisms for enforcing data integrity constraints, such as constraints on the values of data and access controls that restrict who can access the data.
+       <br>    3.Concurrent access: A DBMS provides mechanisms for controlling concurrent access to the database, to ensure that multiple users can access the data without conflicting with each other.
+       <br>    4. Data security: A DBMS provides tools for managing the security of the data, such as controlling access to the data and encrypting sensitive data.
+       <br>    5. Backup and recovery: A DBMS provides mechanisms for backing up and recovering the data in the event of a system failure.
+       <br>    6. Data sharing: A DBMS allows multiple users to access and share the same data, which can be useful in a collaborative work environment.
+       <br> </p><br>   
+       <p1>Disadvantages of using a DBMS:</p1><p>
+       <br>     1.Complexity: DBMS can be complex to set up and maintain, requiring specialized knowledge and skills.
+       <br>     2.Performance overhead: The use of a DBMS can add overhead to the performance of an application, especially in cases where high levels of concurrency are required.
+       <br>     3.Scalability: The use of a DBMS can limit the scalability of an application, since it requires the use of locking and other synchronization mechanisms to ensure data consistency.
+        <br>    4.Cost: The cost of purchasing, maintaining and upgrading a DBMS can be high, especially for large or complex systems.
+      <br>      5.Limited use cases: Not all use cases are suitable for a DBMS, some solutions don’t need high reliability, consistency or security and may be better served by other types of data storage.</P>
+       </p> </body>
+    </head>
+</html>
+<style>
+    body{
+        background-color: lavender;
+    }
+     .nav-items {
+        background-color:  #302f49;
+        display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    a:hover{
+      background-color: yellowgreen;
+    }
+    .nav-items a {
+      text-decoration: none;
+      color: white;
+      padding: 35px 20px;
+      font-size: 37px;
+      font-style: normal;
+    }
+    h1{
+        font-style:normal;
+        font-size:35px;
+        text-decoration:underline;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    p{
+        font-size:24px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration:none;
+    }
+    p1{
+        text-decoration: underline;
+        font-size: 24px;
+    }
+</style>

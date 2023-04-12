@@ -1,0 +1,130 @@
+<html><body>
+  <nav class="nav-items">
+    <a href="index.html">Home</a>
+    <a href="dbms.html">dbms</a>
+    <a href="sql.html">sql</a>
+    <a href="plsql.html">plsql</a>
+  </nav>
+  <h1>Control Statements</h1>
+        
+
+<h2><u>PL/SQL If</h2></u>
+PL/SQL supports the programming language features like conditional statements and iterative statements.<br>
+<br><b>Syntax: (IF-THEN statement):<br></b>
+
+IF condition   <br>
+THEN   <br>
+Statement: {It is executed when condition is true}  <br>
+END IF;  <br><br>
+This syntax is used when you want to execute statements only when condition is TRUE.<br>
+<br><b>
+Syntax: (IF-THEN-ELSE statement):<br></b>
+
+IF condition   <br>
+THEN  <br>
+   {...statements to execute when condition is TRUE...}<br>  
+ELSE  <br>
+   {...statements to execute when condition is FALSE...}  <br>
+END IF;   <br><br>
+This syntax is used when you want to execute one set of statements when condition is TRUE or a 
+different set of statements when condition is FALSE.<br>
+<h2><u>PL/SQL Loop </u></h2>
+The PL/SQL loops are used to repeat the execution of one or more statements for specified number of times.
+ These are also known as iterative control statements.<br><br>
+
+Syntax for a basic loop:
+<br>
+LOOP  <br>
+  Sequence of statements;  <br>
+END LOOP;  <br><br>
+<img src="39.png" alt="Example" width="500" height="300">
+<img src="40.png" alt="Example" width="350" height="180"><br><br>
+<h3>PL/SQL Exit Loop</h3>
+PL/SQL exit loop is used when a set of statements is to be executed at least once before the termination of 
+the loop. There must be an EXIT condition specified in the loop, otherwise the loop will get into an infinite 
+number of iterations. After the occurrence of EXIT condition, the process exits the loop.<br><br>
+Syntax of exit loop:
+<br>
+LOOP   <br>
+   statements;   <br>
+   EXIT;   <br>
+   {or EXIT WHEN condition;}  <br>
+END LOOP;  <br><br>
+<img src="41.png" alt="Example" width="500" height="300">
+<img src="42.png" alt="Example" width="500" height="300"><br><br>
+<h3>PL/SQL While Loop</h3>
+PL/SQL while loop is used when a set of statements has to be executed as long as a condition is true, 
+the While loop is used. The condition is decided at the beginning of each iteration and continues until 
+the condition becomes false.<br><br>
+Syntax of while loop:
+<br>
+WHILE (condition)  <br>
+ LOOP statements;   <br>
+END LOOP;  <br><br>
+<img src="43.png" alt="Example" width="500" height="300">
+<img src="44.png" alt="Example" width="500" height="300"><br><br>
+<h3>PL/SQL FOR Loop</h3>
+PL/SQL for loop is used when when you want to execute a set of statements for a predetermined number 
+of times. The loop is iterated between the start and end integer values. The counter is always incremented by 
+1 and once the counter reaches the value of end integer, the loop ends.<br><br>
+
+Syntax of for loop:<br>
+
+FOR counter IN initial_value .. final_value LOOP  <br>
+  LOOP statements;   <br>
+END LOOP;  <br><br>
+initial_value : Start integer value<br>
+final_value : End integer value<br><br>
+<img src="45.png" alt="Example" width="500" height="300">
+<img src="46.png" alt="Example" width="500" height="300"><br><br>
+<h3>PL/SQL GOTO Statement</h3>
+In PL/SQL, GOTO statement makes you able to get an unconditional jump from the GOTO to a specific executable
+ statement label in the same subprogram of the PL/SQL block.
+
+Here the label declaration which contains the label_name encapsulated within the '<< >>' symbol and must be 
+followed by at least one statement to execute.
+<br><br>
+Syntax:
+<br>
+GOTO label_name;  <br><br>
+<img src="47.png" alt="Example" width="500" height="300">
+<img src="48.png" alt="Example" width="500" height="300"></body>
+<style>
+    body{
+        background-color: lavender;
+    }
+     .nav-items {
+     background-color: #302f49;;
+        display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    a:hover{
+          background-color: yellowgreen;
+        }
+    
+    .nav-items a {
+      text-decoration: none;
+      color:white;
+      padding: 35px 20px;
+      font-size: 37px;
+      font-style: normal;
+    }
+    h1{
+        font-style:normal;
+        font-size:32px;
+        text-decoration:underline;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    p{
+        font-size:24px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration:none;
+    }
+    p1{
+    text-decoration: underline;
+    font-size: 24px;
+    
+    }
+    </style>
+    </html>
